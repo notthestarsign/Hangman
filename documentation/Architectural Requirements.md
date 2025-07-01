@@ -45,3 +45,26 @@ This document describes the architecture of the Hangman Game project including i
 | CI/CD         | GitHub Actions   |
 | Testing       | Pytest           |
 | Container     | Docker           |
+
+## 5. Design Patterns Used
+
+- **Strategy Pattern**: Difficulty modes (easy/medium/hard)
+- **Observer **: UI reacting to state changes
+- **Factory **: Game modes or players
+- **State**: Each state of the game (head, arm, etc.)
+
+---
+
+## 6. Risks and Mitigations
+
+| Risk                             | Mitigation                              |
+|----------------------------------|------------------------------------------|
+| Feature creep                    | Stick to sprint plans and backlog scope |
+| API downtime (word fetch)        | Use fallback local word list            |
+| GUI unresponsiveness             | Use event-based programming             |
+
+---
+
+## 7. Agile Integration
+
+Development was managed through mini-sprints with progress documented in `development-log.md`.
