@@ -28,9 +28,8 @@ jobs:
     - name: ✅ Run Tests
       run: |
         pytest tests/
-        
+
     - name: 🎨 Check formatting with black
       run: |
         pip install black
         black --check .
-
