@@ -109,6 +109,7 @@ docker build -t hangman-app .
 docker run -p 5000:5000 hangman-app
 ```
 -->
+
 ---
 
 ### 🌀 Agile Methodology
