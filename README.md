@@ -71,10 +71,13 @@ hangman_project/ <br />
 ### 🔹 Terminal Version
 
 ```bash
-git clone https://github.com/yourusername/hangman_project.git
-cd hangman_project
-pip install -r requirements.txt
 python src/ui_terminal.py
+```
+
+### 🔹 GUI Version
+
+```bash
+python src/ui_gui.py
 ```
 
 <!-- 
@@ -115,7 +118,7 @@ docker run -p 5000:5000 hangman-app
 ### 🌀 Agile Methodology
 
 This project was developed using Agile principles.
-The progress is documented in development-log.md, following sprints like:
+Following sprints like:
 
 - Sprint 1: Basic CLI game logic
 
