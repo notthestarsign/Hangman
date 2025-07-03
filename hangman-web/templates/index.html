@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hangman Web</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>🎮 Hangman Game</h1>
+    <pre>{{ hangman }}</pre>
+    <h2>Word: {{ word }}</h2>
+    <p>Tries left: {{ tries }}</p>
+    <p>{{ message }}</p>
+
+    {% if not is_over %}
+        <form method="POST">
+            <input type="text" name="guess" maxlength="20" required autofocus>
+            <button type="submit">Guess</button>
+        </form>
+    {% else %}
+        <h3>Game Over - You {{ status.lower() }}!</h3>
+        <form method="GET" action="/">
+            <button type="submit">Play Again</button>
+        </form>
+    {% endif %}
+</body>
+</html>
